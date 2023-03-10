@@ -455,7 +455,7 @@ public class Dashboard extends JFrame {
                         int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to permanently Delete this student?", "Warning", JOptionPane.YES_NO_OPTION);
                         if (dialogResult == JOptionPane.YES_OPTION) {
                             StudentDAO.getInstance().deleteStudent(Integer.parseInt(idInteract.getText()));
-                            repaint();
+                            showStudentList();
                         }
                     } else {
                         JOptionPane.showMessageDialog(null, "The id you inputted might be wrong or empty");
