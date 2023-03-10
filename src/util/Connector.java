@@ -42,6 +42,7 @@ public class Connector {
 //                    "82/2/9 Quang Trung, phuong 10, Go Vap", immAsBytes, "hoc sinh ngoan");
 //            os.writeObject(stu);
 //            os.writeObject(stu2);
+
             for(Student s: studentList){
                 os.writeObject(s);
             }
@@ -70,7 +71,7 @@ public class Connector {
 //            BufferedImage img = ImageIO.read(new ByteArrayInputStream(studentList.get(1).getImage()));
 //
 //            //Write the BufferedImage as a PNG.
-//            ImageIO.write(img, "png", new File("image2.png"));
+//            ImageIO.write(img, "png", new File("image.png"));
 //            System.out.println(studentList.get(1).getName());
 
             file.close();

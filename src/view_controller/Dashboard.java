@@ -11,8 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -643,7 +641,7 @@ public class Dashboard extends JFrame {
 
     private void exportDataToCSV() {
         exportDataCSV = new JButton("Export to csv");
-        exportDataCSV.setBounds(870, 430, 150, 19);
+        exportDataCSV.setBounds(890, 430, 120, 19);
         exportDataCSV.setMargin(new Insets(0, 5, 0, 5));
         exportDataCSV.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

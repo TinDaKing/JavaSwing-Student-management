@@ -29,28 +29,24 @@ public class StudentDAO {
     public List<Student> getAllStudentsAscendingByID() {
         Comparator<Student> comparator = Comparator.comparing(Student::getId);
         Collections.sort(studentList, comparator);
-//        System.out.println(studentList);
         return studentList;
     }
 
     public List<Student> getAllStudentsDescendingByID() {
         Comparator<Student> comparator = Comparator.comparing(Student::getId).reversed();
         Collections.sort(studentList, comparator);
-//        System.out.println(studentList);
         return studentList;
     }
 
     public List<Student> getAllStudentsAscendingByScore() {
         Comparator<Student> comparator = Comparator.comparing(Student::getScore);
         Collections.sort(studentList, comparator);
-//        System.out.println(studentList);
         return studentList;
     }
 
     public List<Student> getAllStudentsDescendingByScore() {
         Comparator<Student> comparator = Comparator.comparing(Student::getScore).reversed();
         Collections.sort(studentList, comparator);
-//        System.out.println(studentList);
         return studentList;
     }
 
